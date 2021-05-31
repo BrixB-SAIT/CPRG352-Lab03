@@ -43,7 +43,7 @@ public class AgeCalculatorServlet extends HttpServlet {
             return;//Very important! Stop the code call.
         }
         
-        else if (age.matches("[A-Za-z]")) {
+        else if (age.matches("[A-Za-z]{1,10}")) {
              //Create a helpful message to send to the user
                 request.setAttribute("message", "You must give your current age.");
             

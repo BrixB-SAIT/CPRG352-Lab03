@@ -20,13 +20,13 @@
             <label>Second:</label>
             <input type="text" name="secondAC" value="${secondNumber}">
             <br>
-            <input type="button" name="plusButton" value="+" >
-            <input type="button" name="minusButton" value="-" >
-            <input type="button" name="timesButton" value="*" >
-            <input type="button" name="modulusButton" value="%" >
-            
+            <button type="submit" name="button" value="button1" >+</button>
+            <button type="submit" name="button" value="button2" >-</button>
+            <button type="submit" name="button" value="button3" >*</button>
+            <button type="submit" name="button" value="button4" >%</button>
+            <br>
         </form>
-            
+            <p>Results: ${empty message ? '---' :message}</p>
             <a href="age">Age Calculator</a>
     </body>
 </html>
